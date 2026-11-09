@@ -495,7 +495,7 @@ Once your full node is synced, review the validator requirements and confirm the
 
 On the host used for this guide, increasing TCP buffers to about 16 MB helped reduce dropped connections. If you see similar drops, record the current settings and compare the drop rate and socket memory use before and after tuning under a similar load. Keep the change only if it helps. [Linux TCP sysctls](https://docs.kernel.org/networking/ip-sysctl.html)
 
-For a host-side trial, inspect the current TCP receive and send settings.
+For a host-side inspect the current TCP receive and send settings.
 
 ```bash
 sysctl net.ipv4.tcp_rmem net.ipv4.tcp_wmem
